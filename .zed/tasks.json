@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Run PalettePainter",
+    "command": "dotnet",
+    "reveal": "always",
+    "args": [
+      "run",
+      "--project",
+      "Chickensoft.PalettePainter/Chickensoft.PalettePainter.csproj",
+      "generate",
+      "output.png",
+      "-x",
+      "12"
+    ]
+  }
+]

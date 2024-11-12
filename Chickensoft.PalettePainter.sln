@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chickensoft.PalettePainter", "Chickensoft.PalettePainter\Chickensoft.PalettePainter.csproj", "{968B4768-1F08-4E47-AD54-23DC06A2BB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chickensoft.PalettePainter.Tests", "Chickensoft.PalettePainter.Tests\Chickensoft.PalettePainter.Tests.csproj", "{D4C71ACA-462E-4240-A8A3-06144B678A83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{968B4768-1F08-4E47-AD54-23DC06A2BB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968B4768-1F08-4E47-AD54-23DC06A2BB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968B4768-1F08-4E47-AD54-23DC06A2BB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968B4768-1F08-4E47-AD54-23DC06A2BB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C71ACA-462E-4240-A8A3-06144B678A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C71ACA-462E-4240-A8A3-06144B678A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C71ACA-462E-4240-A8A3-06144B678A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C71ACA-462E-4240-A8A3-06144B678A83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

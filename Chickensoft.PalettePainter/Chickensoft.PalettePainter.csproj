@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>palettepainter</ToolCommandName>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <LangVersion>preview</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Nullable>enable</Nullable>
+    <CopyAllFiles>true</CopyAllFiles>
+    <RootNamespace>Chickensoft.PalettePainter</RootNamespace>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputPath>./nupkg</OutputPath>
+    <DebugType>portable</DebugType>
+
+    <Title>PalettePainter</Title>
+    <Version>0.0.0-devbuild</Version>
+    <Description>Command-line, general-purpose palette generator for use with pixel art, textures, or art software.</Description>
+    <Copyright>© 2024 Your Name</Copyright>
+    <Authors>Your Name</Authors>
+    <Company>Your Name</Company>
+
+    <PackageId>Chickensoft.PalettePainter</PackageId>
+    <PackageReleaseNotes>Chickensoft.PalettePainter release.</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>palette;pixel art;art;generator;command line;cli;chickensoft;utils</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/chickensoft-games/PalettePainter</PackageProjectUrl>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/chickensoft-games/PalettePainter.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\"/>
+    <None Include="../LICENSE" Pack="true" PackagePath="\"/>
+    <None Include="./icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Dependencies go here. -->
+    <PackageReference Include="CliFx" Version="2.3.5"/>
+    <PackageReference Include="IsExternalInit" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SauceControl.InheritDoc" Version="2.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="IronSoftware.System.Drawing" Version="2024.9.15"/>
+    <PackageReference Include="SkiaSharp" Version="2.88.9"/>
+  </ItemGroup>
+</Project>
