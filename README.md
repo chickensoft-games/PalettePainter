@@ -82,7 +82,7 @@ DESCRIPTION
   Generate a palette of colors.
 
 PARAMETERS
-* output            Palette output image file path 
+* output            Palette output image file path
 
 OPTIONS
   -n|--num-ramps    Number of color ramps to generate Default: "16".
@@ -102,9 +102,9 @@ OPTIONS
 
 🐣 Package generated from a 🐤 Chickensoft Template — <https://chickensoft.games>
 
-[chickensoft-badge]: https://raw.githubusercontent.com/chickensoft-games/chickensoft_site/main/static/img/badges/chickensoft_badge.svg
+[chickensoft-badge]: https://chickensoft.games/img/badges/chickensoft_badge.svg
 [chickensoft-website]: https://chickensoft.games
-[discord-badge]: https://raw.githubusercontent.com/chickensoft-games/chickensoft_site/main/static/img/badges/discord_badge.svg
+[discord-badge]: https://chickensoft.games/img/badges/discord_badge.svg
 [discord]: https://discord.gg/gSjaPgMmYW
 
 [slynyrd]: https://www.slynyrd.com/pixelblog-catalogue
