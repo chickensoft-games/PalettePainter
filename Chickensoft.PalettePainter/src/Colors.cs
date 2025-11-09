@@ -3,7 +3,8 @@ namespace Chickensoft.PalettePainter;
 using System;
 using SkiaSharp;
 
-public static class Colors {
+public static class Colors
+{
   /// <summary>
   ///   Given an interval between 0 and 1, return the saturation level for
   ///   the color at that interval along the ramp (0-100).
@@ -49,14 +50,17 @@ public static class Colors {
   /// <param name="h">0 - 360</param>
   /// <param name="s">0 - 100</param>
   /// <param name="v">0 - 100</param>
-  public static SKColor HsvToRgb(int h, int s, int v) {
+  public static SKColor HsvToRgb(int h, int s, int v)
+  {
     Span<int> rgb = stackalloc int[3];
 
-    while (h < 0) {
+    while (h < 0)
+    {
       h += 360;
     }
 
-    while (h >= 360) {
+    while (h >= 360)
+    {
       h -= 360;
     }
 
@@ -69,12 +73,14 @@ public static class Colors {
     rgb[secondaryColor] = (int)(Math.Abs(shift) / 60.0f * 255.0f);
 
     // Setting Saturation
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++)
+    {
       rgb[i] += (int)((255 - rgb[i]) * ((100 - s) / 100.0f));
     }
 
     // Setting Value
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++)
+    {
       rgb[i] -= (int)(rgb[i] * (100 - v) / 100.0f);
     }
 
