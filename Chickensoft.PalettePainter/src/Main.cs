@@ -3,8 +3,10 @@ namespace Chickensoft.PalettePainter;
 using System.Reflection;
 using System.Threading.Tasks;
 using CliFx;
-public static class PalettePainter {
-  public static async Task<int> Main(string[] args) {
+public static class PalettePainter
+{
+  public static async Task<int> Main(string[] args)
+  {
     var version = Assembly
       .GetEntryAssembly()!
       .GetCustomAttribute<AssemblyInformationalVersionAttribute>()!
